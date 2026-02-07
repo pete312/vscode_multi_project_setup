@@ -1,0 +1,9 @@
+{
+  "python.defaultInterpreterPath": "${env:HOME}/.neo/bin/python",
+  "python.envFile": "${workspaceFolder}/.env",
+  "python.testing.pytestArgs": [
+    "tests"
+  ],
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true
+}
