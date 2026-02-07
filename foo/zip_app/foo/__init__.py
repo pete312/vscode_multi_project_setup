@@ -3,7 +3,7 @@ __appname__ = 'foo'
 
 
 ## 0.2.0 
-# this is release not for the version
+# example release note for this version
 
 ## 0.2.1 
-# fix version option
+# fix --version option

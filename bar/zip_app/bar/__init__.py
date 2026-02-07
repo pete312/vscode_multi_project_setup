@@ -3,4 +3,4 @@ __appname__ = 'bar'
 
 
 ## 0.1.0 
-# this is release not for the version
+# example release note for this version
