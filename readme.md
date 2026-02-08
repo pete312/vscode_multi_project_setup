@@ -7,7 +7,7 @@ This shows a setup with 2 zipapps, their bundlers, their virtualenv bootstrapper
 
 foo and bar are 2 working projects in the repo. They are self contained projects that can be deployed by copying the pyzip file that the bundlers produce.
 
-running bundle_foo.py produces a zip in the `dist/foo-<version>` directory and prints out the location of this zipapp object. The version number is derrived by the app's `__init__.py` file
+running bundle_foo.py produces a zip in the `dist/foo-<version>` directory and prints out the location of this zipapp object. The version number is derrived by the app's [`__init__.py`](./foo/zip_app/foo/__init__.py) file where you can see the release notes too.
 
 
 ```bash
