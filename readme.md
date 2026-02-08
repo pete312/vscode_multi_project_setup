@@ -3,7 +3,7 @@
 This shows a setup with 2 zipapps, their bundlers, their virtualenv bootstrappers, the pytest setups to properly import from the zipapps, and the vscode settings to properly resolve the virtualenv paths and app imports.
 
 
-## The 2 [zipapps](https://docs.python.org/3/library/zipapp.html). 
+## The two zipapp projects (see.. [python zipapps](https://docs.python.org/3/library/zipapp.html)). 
 
 foo and bar are 2 working projects in the repo. They are self contained projects that can be deployed by copying the pyzip file that the bundlers produce.
 
@@ -43,7 +43,7 @@ $ foo --version
 foo, version 0.2.1
 ```
 
-## dev mode.
+## Developing code.
 
 During development you will need to rebuild this a lot then run it. But you can use shell command subsitution to make this transparent.
 
@@ -89,3 +89,24 @@ Commands:
   commit  commit a file
 
 ```
+
+
+## Using vscode 
+
+When you start vscode, load up one of the apps as the working dir
+
+![code](./code_explorer_screen.png)
+
+
+
+This will configure all paths so that you can run pytests in teh tests screen (the test tube icon) 
+
+![tests](./pytests_screen.png)
+
+
+this comes from the [./vscode/settings.json](./foo/.vscode/settings.json) file from each project and allows you to pick the same virtual env that the app uses.
+
+
+## Autobooting the apps virtual env. 
+
+This is outside the scope of this demo at the moment. But will be added.
