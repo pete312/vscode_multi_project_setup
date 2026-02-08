@@ -66,7 +66,7 @@ becomes...
 
 `/home/user/repo/foo/dist/foo-0.2.1 --version`
 
-So if you alias is 
+So if your alias is 
 
 ```bash
 $ which foo
@@ -99,7 +99,7 @@ When you start vscode, load up one of the apps as the working dir
 
 
 
-This will configure all paths so that you can run pytests in teh tests screen (the test tube icon) 
+This will configure all paths so that you can run pytests in the tests screen (the test tube icon) 
 
 ![tests](./pytests_screen.png)
 
@@ -109,4 +109,9 @@ this comes from the [./vscode/settings.json](./foo/.vscode/settings.json) file f
 
 ## Autobooting the apps virtual env. 
 
-This is outside the scope of this demo at the moment. But will be added.
+This is outside the scope of this demo at the moment. But will be added. 
+
+But right now the simple way is included, which is that the bundler will create the virtual env with local python. It will then pip install anything in the requirements.txt file found in the project dir [foo/requirements.txt](./foo/requirements.txt).  This is simple and can be done with anything. (uv, poetry, etc) 
+
+
+What is not included, is a way for the app to build up its own virtual env on a remote machine. That is what will come later and is a topic in itself.
