@@ -5,7 +5,7 @@ from foo import __version__
 import click
 
 
-@click.group
+@click.group(help='a demo with git like args')
 @click.version_option(__version__, prog_name=__appname__)
 def main():
     print(f"{__appname__}")
